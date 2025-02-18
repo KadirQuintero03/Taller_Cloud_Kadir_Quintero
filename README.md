@@ -1,13 +1,27 @@
-# Taller_Cloud_Kadir_Quintero
+# Como construir y ejecutar un Contenedor con Docker en base a una imagen / Taller Cloud
 
-Pasos para construir la imagen y ejecutar el contenedor dentro de las computadoras.
+Por favor seguir el paso a paso sobre cómo descargar una imagen desde Docker Hub, crear un contenedor y ejecutarlo en su computadora.
 
--> Paso 1. Iniciar sesion con Docker Hub por medio de la terminal usando su usario y contraseña para poder descargar la imagen.
+1️⃣ Iniciar sesión en Docker Hub
 
--> Paso 2. Una vez iniciada la sesion escribimos el comando "docker pull keduardoquintero/keduardoquintero:latest" para descargar la imagen desde docker hub a nuestro dispositivo.
+-> Para descargar la imagen, es necesario iniciar sesión en Docker Hub, para ello acceda desde su terminal y ejecute el siguiente comando: "docker login" <- 
 
--> Paso 3. Una vez descargada la imagen debemos construir el contenedor con el siguiente comando "docker run -d --name nombrecontenedor -p puertohost:8000 imagen" y ejecutarlo
+❗Aclaracion: En caso de que no se logre loggearse satisfactoriamente por el metodo actual de docker, se puede utilizar el comando "docker login -u nombreusuario -p contraseña" para loggearse.
 
--> Paso 4. Ya montado el contenedor podemos probarlo desde la web usando "localhost:puertohost"
+2️⃣ Descargar la imagen desde Docker Hub
 
-ACLARACION: Cabe aclarar que el "Puertohost" es el que usted como usuario haya designado, por ejemplo, si uso el 8080:8000 entonces seria "localhost:8080" 
+-> Una vez iniciada la sesion, ejecute el siguiente comando para descargar la imagen desde el repositorio en Docker Hub a su computadora: <-
+
+❕ docker pull keduardoquintero/keduardoquintero:latest ❕
+
+3️⃣ Crear y ejecutar el contenedor
+
+-> Ya descargada la imagen, debemos crear y ejecutar el contenedor. Para ello, utilizaremos el siguiente comando: <-
+
+❕ docker run -d --name nombrecontenedor -p PUERTO_HOST:8000 keduardoquintero/keduardoquintero:latest ❕
+
+4️⃣ Acceder al contenedor desde el navegador
+
+-> una vez que el contenedor está en ejecución, procedemos a probar su funcionalidad ingresando desde el navegador web a: localhost:PUERTO_HOST
+
+ACLARACION: Cabe aclarar que el "PUERTO_HOST" es el que usted como usuario haya designado al ejecutar el contenedor, por ejemplo, si uso el "-p 8080:8000" entonces seria "localhost:8080" 
