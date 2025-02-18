@@ -12,7 +12,7 @@ docker login
 > 📌 **Nota:** En caso de que no se logre loggearse satisfactoriamente por el metodo actual de docker, se puede utilizar el siguiente comando para loggearse:
 
 ```bash
-**docker login -u username -p password**
+docker login -u username -p password
 ```
 
 2️⃣ Descargar la imagen desde Docker Hub
