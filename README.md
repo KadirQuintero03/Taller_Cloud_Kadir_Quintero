@@ -9,10 +9,10 @@ Por favor seguir el paso a paso sobre cómo descargar una imagen desde Docker Hu
 docker login
 ```
 
-> 📌 **Nota:** En caso de que no se logre loggearse satisfactoriamente por el metodo actual de docker, se puede utilizar el siguiente comando para loggearse.
+> 📌 **Nota:** En caso de que no se logre loggearse satisfactoriamente por el metodo actual de docker, se puede utilizar el siguiente comando para loggearse:
 
 ```bash
-**docker login**
+**docker login -u username -p password**
 ```
 
 2️⃣ Descargar la imagen desde Docker Hub
