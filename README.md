@@ -4,15 +4,17 @@ Por favor seguir el paso a paso sobre cómo descargar una imagen desde Docker Hu
 
 1️⃣ Iniciar sesión en Docker Hub
 
--> Para descargar la imagen, es necesario iniciar sesión en Docker Hub, para ello acceda desde su terminal y ejecute el siguiente comando: "docker login" <- 
+-> Para descargar la imagen, es necesario iniciar sesión en Docker Hub, para ello acceda desde su terminal y ejecute el siguiente comando: "`docker login`" <- 
 
-❗Aclaracion: En caso de que no se logre loggearse satisfactoriamente por el metodo actual de docker, se puede utilizar el comando "docker login -u nombreusuario -p contraseña" para loggearse.
+❗Aclaracion: En caso de que no se logre loggearse satisfactoriamente por el metodo actual de docker, se puede utilizar el comando "`docker login -u nombreusuario -p contraseña`" para loggearse.
 
 2️⃣ Descargar la imagen desde Docker Hub
 
 -> Una vez iniciada la sesion, ejecute el siguiente comando para descargar la imagen desde el repositorio en Docker Hub a su computadora: <-
 
-❕ docker pull keduardoquintero/keduardoquintero:latest ❕
+```bash
+docker pull keduardoquintero/keduardoquintero:latest 
+```
 
 3️⃣ Crear y ejecutar el contenedor
 
